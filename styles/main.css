@@ -1,0 +1,261 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+
+header {
+    background-color: #5a5af0;
+    height: 72px;
+    padding: 0 24px;
+    /* border-bottom: 1px solid #E2E8F0; */
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    justify-content:space-evenly;
+}
+
+header p {
+    color: #0F172A;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+/* Brand */
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+} 
+ 
+.brand-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+}
+
+.brand-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.brand-name::first-letter {
+  color: #034bf4;
+}
+
+
+
+/* -----------------------  header ends------------------- */
+
+
+
+.under-header{
+    display: flex;
+    height:calc(100vh - 72px);
+}
+
+
+
+/* ============================================================================
+   MySarafi Sidebar - Final v1
+==================================================================================== */
+
+.sidebar {
+  width: 340px;
+  /* background: #0f172a; */
+  background: #0F172A;
+  padding: 28px 22px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 0 30px rgba(15, 23, 42, 0.18);
+
+}
+
+
+/* Nav */
+.sidebar-nav {
+  flex: 1;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  border-bottom: 1px solid rgba(226, 232, 240, 0.14);
+}
+
+.nav-link {
+  position: relative;
+  min-height: 78px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  color: #f8fafc;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  transition: 0.25s ease;
+}
+
+.nav-link::before {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.nav-link::after {
+  content: "›";
+  margin-left: auto;
+  color: #94a3b8;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.nav-link:hover {
+  background: rgba(37, 99, 235, 0.14);
+}
+
+.nav-link:hover::after {
+  color: #ffffff;
+}
+
+/* Active */
+.nav-link.active{
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: 1px solid rgba(96, 165, 250, 0.7);
+  box-shadow: 0 14px 34px rgba(37, 99, 235, 0.35);
+}
+
+.nav-link.active::before {
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 0 14px rgba(255, 255, 255, 0.25);
+}
+
+.nav-link.active::after {
+  color: #ffffff;
+}
+
+/* Icons */
+.nav-link-dashboard::before {
+  content: "🏠";
+}
+
+.nav-link-branches::before {
+  content: "👥";
+}
+
+
+.nav-link-send::before {
+  content: "↗️";
+}
+
+.nav-link-receive::before {
+  content: "↙️";
+}
+
+
+/* Footer */
+.sidebar-footer {
+  margin-top: 28px;
+}
+
+.logout-link {
+  min-height: 78px;
+  padding: 14px 18px;
+  border-radius: 18px;
+  background: rgba(239, 68, 68, 0.13);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  color: #ff6b6b;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  transition: 0.25s ease;
+}
+
+.logout-link::before {
+  content: "↪";
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: rgba(239, 68, 68, 0.18);
+  color: #ff6b6b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 30px;
+}
+
+.logout-link::after {
+  content: "›";
+  margin-left: auto;
+  color: #94a3b8;
+  font-size: 34px;
+}
+
+.logout-link:hover {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.logout-link:hover::before,
+.logout-link:hover::after {
+  color: #ffffff;
+}
+
+/* ------------------------------- Sidebar ends here -------------------------------------------------------- */
+
+
+
+.page-content{
+    background-color: #EEF2F6;
+    flex: 1;
+    overflow-y:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}

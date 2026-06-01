@@ -1,0 +1,20 @@
+
+
+  So this is the sarafi project teacher masih gave me to do in laravel 
+  but i wanna see how it goes in php first.
+
+-> First we do all of it by ourself without seeing the zip file 
+   to feel it.
+
+         My Questions: 🤔
+
+     1. how pages are related?
+     2. should we put the pages link at header or sidebar?
+     3. what does come in the header though bro? 
+     4. should we actually make 4 crud files for each table ? [insert delete....]
+     5. where the hell are the backend php codes in pages beside htmls or what?
+     6. what is used in that zip file for backend ? --> oop pdo or ...
+
+     7. how the database is designed ? what tables has made how many , why
+
+     8. how are the css code inserted in each file if we have one header???
